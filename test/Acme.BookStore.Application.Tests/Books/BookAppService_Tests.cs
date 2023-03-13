@@ -108,6 +108,7 @@ public class BookAppService_Tests
         //Assert
         result.Id.ShouldNotBe(Guid.Empty);
         result.Name.ShouldBe("New test book 42");
+        /*merhaba beler */
     }
 
     [Fact]
