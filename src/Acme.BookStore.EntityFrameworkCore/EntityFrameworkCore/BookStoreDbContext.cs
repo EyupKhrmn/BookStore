@@ -50,7 +50,9 @@ public class BookStoreDbContext :
     public DbSet<IdentityLinkUser> LinkUsers { get; set; }
     public DbSet<Book> Books { get; set; }
     public DbSet<Author> Authors { get; set; }
-
+    public DbSet<Buyers.Buyers> Buyers { get; set; }
+    
+    
     // Tenant Management
     public DbSet<Tenant> Tenants { get; set; }
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }

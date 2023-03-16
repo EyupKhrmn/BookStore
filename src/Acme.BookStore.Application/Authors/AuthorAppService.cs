@@ -27,7 +27,6 @@ public class AuthorAppService : BookStoreAppService,IAuthorAppService
         return ObjectMapper.Map<Author, AuthorDto>(author);
     }
     
-
     public async Task<PagedResultDto<AuthorDto>> GetListAsync(GetAuthorListDto input)
     {
         if (input.Sorting.IsNullOrWhiteSpace())

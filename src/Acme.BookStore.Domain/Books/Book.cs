@@ -10,6 +10,8 @@ public class Book : AuditedAggregateRoot<Guid>
     public DateTime PublishDate { get; set; }
     public float Price { get; set; }
 
+    public int Stock { get; set; }
+
     #region Relations
 
     public Guid AuthorId { get; set; }
